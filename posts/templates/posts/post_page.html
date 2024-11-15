@@ -1,0 +1,24 @@
+
+
+
+
+{% extends "layout.html" %}
+
+{% block title %}
+
+        {{post.title}}
+
+{% endblock  %}
+
+{% block content %}
+
+        
+
+        <section class="mypost">
+                        <h1>{{post.title}}</h1>
+                        <p>{{post.body}}</p>
+                        <p>{{post.slug}}</p>
+                        <img src="{{post.images.url}}">
+        </section>
+
+{% endblock  %}
